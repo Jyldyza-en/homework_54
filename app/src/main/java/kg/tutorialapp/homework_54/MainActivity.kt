@@ -2,6 +2,7 @@ package kg.tutorialapp.homework_54
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -42,12 +43,12 @@ class MainActivity : AppCompatActivity() {
         val employeesLiveData = dao.getEmployeeWithDepartment()
 
         employeesLiveData.observe(this,
-            { TAG = "$it" })
+            { Log.d(TAG, "$it") })
 
     }
 
 
     companion object{
-        var TAG = "myLog"
+        const val TAG = "myLog"
     }
 }
