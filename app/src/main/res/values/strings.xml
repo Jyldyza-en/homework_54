@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">homework_54</string>
+    <string name="name">name</string>
+    <string name="salary">salary</string>
+    <string name="department">department</string>
+    <string name="button2">Get info about employee</string>
+    <string name="id">idDep</string>
+    <string name="button3">insert</string>
+</resources>
