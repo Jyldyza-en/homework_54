@@ -40,10 +40,11 @@ class MainActivity : AppCompatActivity() {
             .subscribe {  }
 
 
-        val employeesLiveData = dao.getEmployeeWithDepartment()
+        val employeesLiveData = dao.getDepartmentsWithEmployees()
 
         employeesLiveData.observe(this,
-            { Log.d(TAG, "$it") })
+            {Log.d(TAG, "$it" )}
+        )
 
     }
 

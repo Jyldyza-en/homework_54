@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class Department(
     @PrimaryKey(autoGenerate = false)
-    val id: Long,
-    val name: String
+    val departmentId: Long,
+    val departmentName: String
 
 )
